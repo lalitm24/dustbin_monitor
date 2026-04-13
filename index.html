@@ -2,36 +2,22 @@
 <html>
 
 <head>
+<meta charset="UTF-8">
 <title>DMC Dustbin Monitoring</title>
-
-<style>
-
-body{
-font-family:Arial;
-text-align:center;
-margin-top:80px;
-}
-
-button{
-padding:10px 20px;
-font-size:18px;
-}
-
-h1{
-color:darkgreen;
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>DMC Dustbin Monitoring System</h1>
+<h1>Dustbin Monitoring System</h1>
 
 <p>Upload an image of a dustbin</p>
 
-<input type="file">
+<input type="file" id="imageUpload">
+
+<br><br>
+
+<img id="preview" width="300">
 
 <br><br>
 
@@ -39,16 +25,7 @@ color:darkgreen;
 
 <h2 id="result"></h2>
 
-<script>
-
-function predict(){
-
-document.getElementById("result").innerText =
-"Model processing (backend coming soon)"
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
